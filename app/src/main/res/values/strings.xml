@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">i222427</string>
+    <string name="terms_privacy">
+    By clicking Agree and continue below, I agree to
+    <u><font color="#8B5D33"><b>Terms of Service</b></font></u> and
+    <u><font color="#8B5D33"><b>Privacy Policy</b></font></u>
+    </string>
+
 </resources>
