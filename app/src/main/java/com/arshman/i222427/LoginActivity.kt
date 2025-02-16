@@ -12,6 +12,7 @@ import android.text.style.ClickableSpan
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -27,6 +28,13 @@ class LoginActivity : AppCompatActivity() {
 
         val startIndex = fullText.indexOf("Register")
         val endIndex = startIndex + "Register".length
+
+        val btnLogin = findViewById<Button>(R.id.btnLogin) // Make sure ID matches
+
+        btnLogin.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
 
 // Manually force brown color (bypasses theme)
         val brownColor = 0xFF8B5E3C.toInt()

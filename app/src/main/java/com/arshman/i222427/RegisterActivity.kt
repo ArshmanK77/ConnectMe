@@ -29,6 +29,13 @@ class RegisterActivity : AppCompatActivity() {
         val startIndex = fullText.indexOf("Login")
         val endIndex = startIndex + "Login".length
 
+        val registerButton = findViewById<Button>(R.id.btnRegister)
+
+        registerButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
 // Manually force brown color (bypasses theme)
         val brownColor = 0xFF8B5E3C.toInt()
         spannableString.setSpan(
